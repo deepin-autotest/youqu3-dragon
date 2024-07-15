@@ -5,7 +5,8 @@ authors = [
     { name = "mikigo", email = "huangmingqiang@uniontech.com" },
 ]
 dependencies = [
-    "nicegui",
+    "fastapi",
+    "jinja2",
 ]
 dynamic = ["version"]
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="{{ url_for('static', path='/hello/style.css') }}" rel="stylesheet">
+    <link rel="shortcut  icon" href="{{ url_for('static', path='/favicon.ico') }}" type="image/x-icon"/>
+</head>
+<body class="f_box" style="background-color: #2d3a4b">
+<div class="card">
+    <div class="logo">
+        <img class="logo" src="{{ url_for('static', path='/logo.png') }}"/>
+    </div>
+
+    <div class="box">
+
+        <h2 class="hi">{{ hi }}</h2>
+        <br>
+        <form action="/form">
+            <label for="git_url">用例仓库：</label>
+            <input type="text" id="git_url" name="git_url"><br><br>
+
+            <label for="git_branch">分支：</label>
+            <input type="text" id="git_branch" name="git_branch"><br><br>
+
+            <label for="runway-select">分支：</label>
+            <select name="runway" id="runway-select">
+                <option value="">--请选择驱动方式--</option>
+                <option value="tags">标签驱动</option>
+                <option value="keywords">关键词驱动</option>
+            </select>
+
+            <br><br>
+            <input type="submit" value="YouQu3">
+        </form>
+    </div>
+</div>
+</body>
+</html>
