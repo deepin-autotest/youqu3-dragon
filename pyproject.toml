@@ -1,6 +1,6 @@
 [project]
-name = "youqu3-web"
-description = "youqu3-web"
+name = "youqu3-dragon"
+description = "youqu3-dragon"
 authors = [
     { name = "mikigo", email = "huangmingqiang@uniontech.com" },
 ]
@@ -15,7 +15,7 @@ readme = "README.md"
 license = { text = "GPL2.0" }
 
 [project.scripts]
-youqu3-dragon = "youqu3_dragon.cli:cli"
+youqu3-dragon = "youqu3_dragon.main:main"
 
 [build-system]
 requires = ["hatchling"]

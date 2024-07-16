@@ -26,10 +26,13 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 app.include_router(dragon)
 app.include_router(form)
 
-if __name__ == '__main__':
+def main():
     uvicorn.run(
         app="main:app",
         host="0.0.0.0",
         port=5656,
         reload=True
     )
+
+if __name__ == '__main__':
+    main()
